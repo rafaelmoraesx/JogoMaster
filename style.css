@@ -5,7 +5,7 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-    background-image: url(./imagem/imagem.jpg); /* Caminho da imagem de fundo */
+    background-image: url(./imagem.jpg); /* Caminho da imagem de fundo */
     background-size: cover;
     background-position: center;
     display: flex;
