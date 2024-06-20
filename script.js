@@ -30,6 +30,13 @@ function checkGuess() {
         alert('Por favor, insira um número válido entre 1 e 100.');
         return;
     }
+
+    {
+
+    document.getElementById('guessInput').value = ''; // Limpa o campo de palpite após cada tentativa
+
+    }
+
     attempts++
     if (guess === targetNumber) {
         document.getElementById('feedback').innerText = '';
