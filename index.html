@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-image">
+        <div class="container">
+            <h1>Jogo de Adivinhação</h1>
+            <form id="start-form">
+                <label for="playerName">Digite seu nome:</label>
+                <input type="text" id="playerName" required autofocus>
+                <button type="submit">Jogar</button>
+            </form>
+        </div>
+
+        <div class="game-container" id="game-container">
+            <h2 id="welcomeMessage"></h2>
+            <form id="guess-form">
+                <label for="guessInput">Digite um número entre 1 e 100:</label>
+                <input type="number" id="guessInput" min="1" max="100">
+                <button type="submit">Adivinhar</button>
+            </form>
+            <p id="feedback"></p>
+        </div>
+
+        <div class="result-container" id="result-container">
+            <h2 id="congratsMessage"></h2>
+            <p>O número correto era: <span id="correctNumber"></span></p>
+            <p>Sua pontuação final foi: <span id="score"></span> tentativas</p>
+            <button id="play-again-button">Jogar Novamente</button>
+            <button id="restart-button">Voltar para Início</button>
+        </div>
+    </div>
+
+    <div class="leaderboard-container">
+        <h2>Classificação dos Jogadores</h2>
+        <ul id="leaderboard"></ul>
+        <button id="clear-leaderboard-button">Limpar Classificação</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
